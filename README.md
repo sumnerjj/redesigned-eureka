@@ -32,9 +32,9 @@ Create a user with email and password:
 
 curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d ' {"user": {"name":"Exampleuser Name", "email":"user2@example.com", "password": "pw1234", "password_confirmation":"pw1234"} }' https://redesigned-eureka.herokuapp.com/users
 
-Create a user with a Facebook token:
+Create a user with a Facebook token (Get a FACEBOOK_TOKEN here: https://developers.facebook.com/tools/explorer):
 
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d ' {"user": {"name":"Firstname Lastname", "email":"", "facebook_token":"EAACEdEose0cBAGIWn55zR5SMdpnihCm2gOrUYPRS3GjzNXgSaYPEts1J5ixgB0MdFA3lvXurK32MHqjOCPRrFNLiZB3UzMz29xWWwgQJhJYeGZB8Y0BPGOQJKidZA2gSj91uhHWzMZBwZBxMVrrECpEuzizXkf3xd8iYMa0GSagZDZD"} }' https://redesigned-eureka.herokuapp.com/users
+curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d ' {"user": {"name":"Firstname Lastname", "email":"", "facebook_token":"FACEBOOK_TOKEN"} }' https://redesigned-eureka.herokuapp.com/users
 
 Log in an existing user with email and password and return a fresh authentication token:
 
@@ -42,7 +42,7 @@ curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POS
 
 Log in an existing user with Facebook token and return a fresh authentication token:
 
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d ' {"user": {"name":"Firstname Lastname", "email":"", "facebook_token":"EAACEdEose0cBAGIWn55zR5SMdpnihCm2gOrUYPRS3GjzNXgSaYPEts1J5ixgB0MdFA3lvXurK32MHqjOCPRrFNLiZB3UzMz29xWWwgQJhJYeGZB8Y0BPGOQJKidZA2gSj91uhHWzMZBwZBxMVrrECpEuzizXkf3xd8iYMa0GSagZDZD"} }' https://redesigned-eureka.herokuapp.com/login
+curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d ' {"user": {"name":"Firstname Lastname", "email":"", "facebook_token":"FACEBOOK_TOKEN"} }' https://redesigned-eureka.herokuapp.com/login
 
 Add a user to a task:
 
