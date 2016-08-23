@@ -10,23 +10,23 @@ Requests must be authenticated with a token. You can obtain a token by creating 
 
 Add a task:
 
-curl -v -H "Accept: application/json" -H "Authorization:zk_lmZT5bYJwIuXPaP_fhA" -H "Content-type: application/json" -X POST -d ' {"task": {"title":"Cool title", "description":"Sweet description"} }' https://redesigned-eureka.herokuapp.com/tasks
+curl -v -H "Accept: application/json" -H "Authorization:I54uvuqpdePtmDxyOkYQYw" -H "Content-type: application/json" -X POST -d ' {"task": {"title":"Cool title", "description":"Sweet description"} }' https://redesigned-eureka.herokuapp.com/tasks
 
 Show all tasks:
 
-curl -v -H "Accept: application/json" -H "Authorization:zk_lmZT5bYJwIuXPaP_fhA" -H "Content-type: application/json" -X GET -d ' {}' https://redesigned-eureka.herokuapp.com/tasks
+curl -v -H "Accept: application/json" -H "Authorization:I54uvuqpdePtmDxyOkYQYw" -H "Content-type: application/json" -X GET -d ' {}' https://redesigned-eureka.herokuapp.com/tasks
 
 Show a task (and show names of users attached to task):
 
-curl -v -H "Accept: application/json" -H "Authorization:zk_lmZT5bYJwIuXPaP_fhA" -H "Content-type: application/json" -X GET -d ' {}' https://redesigned-eureka.herokuapp.com/tasks/1
+curl -v -H "Accept: application/json" -H "Authorization:I54uvuqpdePtmDxyOkYQYw" -H "Content-type: application/json" -X GET -d ' {}' https://redesigned-eureka.herokuapp.com/tasks/1
 
 Edit a task:
 
-curl -v -H "Accept: application/json" -H "Authorization:zk_lmZT5bYJwIuXPaP_fhA" -H "Content-type: application/json" -X PATCH -d ' {"task": {"title":"New title", "description":"New description"} }' https://redesigned-eureka.herokuapp.com/tasks/1
+curl -v -H "Accept: application/json" -H "Authorization:I54uvuqpdePtmDxyOkYQYw" -H "Content-type: application/json" -X PATCH -d ' {"task": {"title":"New title", "description":"New description"} }' https://redesigned-eureka.herokuapp.com/tasks/1
 
 Delete a task:
 
-curl -v -H "Accept: application/json" -H "Authorization:zk_lmZT5bYJwIuXPaP_fhA" -H "Content-type: application/json" -X DELETE -d ' {}' https://redesigned-eureka.herokuapp.com/tasks/2
+curl -v -H "Accept: application/json" -H "Authorization:I54uvuqpdePtmDxyOkYQYw" -H "Content-type: application/json" -X DELETE -d ' {}' https://redesigned-eureka.herokuapp.com/tasks/2
 
 Create a user with email and password:
 
@@ -46,4 +46,5 @@ curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POS
 
 Add a user to a task:
 
-curl -v -H "Accept: application/json" -H "Authorization:zk_lmZT5bYJwIuXPaP_fhA" -H "Content-type: application/json" -X POST -d ' {"user_id": "1" }' https://redesigned-eureka.herokuapp.com/tasks/1/users
+curl -v -H "Accept: application/json" -H "Authorization:I54uvuqpdePtmDxyOkYQYw" -H "Content-type: application/json" -X POST -d ' {"user_id": "1" }' https://redesigned-eureka.herokuapp.com/tasks/1/users
+
