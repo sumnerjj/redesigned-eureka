@@ -30,7 +30,7 @@ curl -v -H "Accept: application/json" -H "Authorization:I54uvuqpdePtmDxyOkYQYw" 
 
 Create a user with email and password:
 
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d ' {"user": {"name":"Exampleuser Name", "email":"user@example.com", "password": "pw1234", "password_confirmation":"pw1234"} }' https://redesigned-eureka.herokuapp.com/users
+curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d ' {"user": {"name":"Exampleuser Name", "email":"user2@example.com", "password": "pw1234", "password_confirmation":"pw1234"} }' https://redesigned-eureka.herokuapp.com/users
 
 Create a user with a Facebook token:
 
