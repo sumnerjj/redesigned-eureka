@@ -18,7 +18,7 @@ class User < ApplicationRecord
 	# Auth token expires after 24 hours
   def generate_authentication_token
       self.auth_token  = User.new_token
-			self.auth_expires_at = Time.now + 24.hours
+			self.auth_expires_at = Time.now + 240.hours
 	end
 
   def User.new_token
