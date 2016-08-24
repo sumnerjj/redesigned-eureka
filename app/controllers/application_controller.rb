@@ -8,7 +8,7 @@ class ApplicationController < ActionController::API
 		end
 		
 		# Check whether auth token has expired
-		@current_user = nil unless ( (@current_user.auth_expires_at - Time.now) > 0 )
+		@current_user = nil unless ( @current_user && (@current_user.auth_expires_at - Time.now) > 0 )
 
 		# If user isn't found, return an error
 		if !@current_user
