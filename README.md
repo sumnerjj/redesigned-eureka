@@ -48,5 +48,5 @@ curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POS
 
 Add a user to a task:
 
-curl -v -H "Accept: application/json" -H "Authorization:0snJYIqpiml0ny5wbKWSyw" -H "Content-type: application/json" -X POST -d ' {"user_id": "1" }' https://redesigned-eureka.herokuapp.com/tasks/5/users
+curl -v -H "Accept: application/json" -H "Authorization:0snJYIqpiml0ny5wbKWSyw" -H "Content-type: application/json" -X POST -d ' {"user_id": "4" }' https://redesigned-eureka.herokuapp.com/tasks/5/users
 
